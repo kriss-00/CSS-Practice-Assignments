@@ -1,0 +1,30 @@
+/* Custom Styles */
+
+body {
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+header {
+    border-bottom: 4px solid #32cd32; /* Green border at the bottom of header */
+}
+
+footer {
+    background-color: #006400; /* Dark green footer */
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #007bff; /* Custom color for H2 headings */
+}
+
+.btn-success {
+    background-color: #28a745; /* Custom green button color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+}

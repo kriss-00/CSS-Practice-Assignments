@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Section to demonstrate positioning */
+.positioning-section {
+    margin-top: 100px; /* Offset from the fixed header */
+    padding: 20px;
+}
+
+/* Static Position */
+.static-box {
+    background-color: #ff6347;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: static; /* Default, included here for clarity */
+}
+
+/* Relative Position */
+.relative-box {
+    background-color: #f0e68c;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 20px; /* Moves down by 20px */
+    left: 30px; /* Moves right by 30px */
+}
+
+/* Absolute Position */
+.absolute-box {
+    background-color: #4682b4;
+    padding: 20px;
+    margin-bottom: 200px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 200px;
+}
+
+/* Sticky Position */
+.sticky-box {
+    background-color: #90ee90;
+    padding: 20px;
+    margin-bottom: 500px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 10px; /* Sticks 10px from the top of the viewport when scrolling */
+}
+
+/* Fixed Position Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

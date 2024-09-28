@@ -1,0 +1,29 @@
+/* Styling for the boxes to make them easier to see */
+.box {
+    width: 300px; /* Width of the content */
+    padding: 20px; /* Internal space around the content */
+    border: 5px solid #3498db; /* Blue border */
+    margin: 20px; /* External space between the box and other elements */
+    background-color: #f1c40f; /* Yellow background for visibility */
+}
+
+/* Box using content-box model (default) */
+.content-box {
+    box-sizing: content-box;
+}
+
+/* Box using border-box model */
+.border-box {
+    box-sizing: border-box;
+}
+
+/* Styling for visual clarity */
+h2 {
+    color: #2c3e50;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #34495e;
+}

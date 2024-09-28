@@ -1,0 +1,49 @@
+        /* Grid container */
+        .grid-container {
+            display: grid; /* Activates grid layout */
+            grid-template-columns: 1fr 2fr 1fr; /* Three columns: first and third equal, middle twice as wide */
+            grid-template-rows: auto 200px auto; /* Three rows: first and third rows auto-sized, middle row fixed */
+            grid-gap: 20px; /* Space between grid items */
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Define grid areas */
+        .header {
+            grid-column: 1 / span 3; /* Header spans all three columns */
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .sidebar {
+            grid-row: 2; /* Sidebar stays in the second row */
+            background-color: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+
+        .content {
+            grid-column: 2; /* Content in the second column */
+            grid-row: 2; /* Content in the second row */
+            background-color: #e74c3c;
+            padding: 20px;
+            color: white;
+        }
+
+        .extra {
+            grid-column: 3; /* Extra content in the third column */
+            grid-row: 2; /* Extra in the second row */
+            background-color: #f39c12;
+            padding: 20px;
+            color: white;
+        }
+
+        .footer {
+            grid-column: 1 / span 3; /* Footer spans all three columns */
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }

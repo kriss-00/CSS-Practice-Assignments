@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* Box Styling */
+.animation-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #4682b4;
+    color: white;
+    line-height: 150px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.box1 {
+    animation: bounce 2s ease infinite; /* Bouncing animation with infinite loop */
+}
+
+/* Color Change Animation */
+@keyframes colorChange {
+    0% {
+        background-color: #4682b4;
+    }
+    50% {
+        background-color: #32cd32;
+    }
+    100% {
+        background-color: #4682b4;
+    }
+}
+
+.box2 {
+    animation: colorChange 3s linear 1s infinite; /* Color change with delay and infinite loop */
+}
+
+/* Slide Animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+.box3 {
+    animation: slide 4s ease-in-out 2; /* Slide animation with two iterations */
+}

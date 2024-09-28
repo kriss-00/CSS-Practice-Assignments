@@ -1,0 +1,54 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* Box Styling */
+.transform-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #4682b4;
+    color: white;
+    line-height: 150px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Transform Examples */
+
+/* Translate: Moves the box 100px to the right and 50px down */
+.transform-box.box1:hover {
+    transform: translate(100px, 50px);
+}
+
+/* Rotate: Rotates the box 45 degrees clockwise */
+.transform-box.box2:hover {
+    transform: rotate(45deg);
+}
+
+/* Scale: Doubles the size of the box */
+.transform-box.box3:hover {
+    transform: scale(2);
+}
+
+/* Skew: Skews the box by 20 degrees along the X-axis */
+.transform-box.box4:hover {
+    transform: skewX(20deg);
+}
+
+/* Combined: Scales the box, rotates it 30 degrees, and translates it 50px to the right */
+.transform-box.box5:hover {
+    transform: scale(1.5) rotate(30deg) translate(50px);
+}

@@ -1,0 +1,57 @@
+ /* Main flex container */
+ .main-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around; /* Distribute items evenly */
+    align-content: space-between; /* Align content vertically with space in between */
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 400px; /* Set a height for the container */
+}
+
+/* Individual flex items */
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 150px; /* Fixed width for flex items */
+    margin: 10px;
+}
+
+/* Nested flex container */
+.nested-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically in nested container */
+    align-items: center; /* Center items horizontally in nested container */
+    background-color: #2ecc71;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Flex-wrap property */
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for nested items */
+    background-color: #e74c3c;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Change order of items */
+.order-1 {
+    order: 1; /* First item */
+}
+
+.order-2 {
+    order: 2; /* Second item */
+}
+
+.order-3 {
+    order: 3; /* Third item */
+}

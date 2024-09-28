@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Forms Example</title>
+    <link rel="stylesheet" href="styles17.css">
+</head>
+<body>
+    <h1>Styled Form Elements</h1>
+    
+    <form class="styled-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Gender:</label>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label for="hobbies">Hobbies:</label>
+            <label>
+                <input type="checkbox" value="reading"> Reading
+            </label>
+            <label>
+                <input type="checkbox" value="travelling"> Travelling
+            </label>
+            <label>
+                <input type="checkbox" value="sports"> Sports
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

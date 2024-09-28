@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images Example</title>
+    <link rel="stylesheet" href="styles10.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive Images with `srcset`</h1>
+    </header>
+
+    <main>
+        <h2>Example of Responsive Images</h2>
+        <p>This image changes based on screen size:</p>
+        <img 
+            src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGltYWdlJTIwcGFuZGF8ZW58MHx8fHwxNjgwMjA2ODg0&ixlib=rb-1.2.1&q=80&w=600" 
+            srcset="
+                https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGltYWdlJTIwcGFuZGF8ZW58MHx8fHwxNjgwMjA2ODg0&ixlib=rb-1.2.1&q=80&w=300 300w,
+                https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGltYWdlJTIwcGFuZGF8ZW58MHx8fHwxNjgwMjA2ODg0&ixlib=rb-1.2.1&q=80&w=600 600w,
+                https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGltYWdlJTIwcGFuZGF8ZW58MHx8fHwxNjgwMjA2ODg0&ixlib=rb-1.2.1&q=80&w=900 900w"
+            sizes="(max-width: 600px) 300px,
+                   (max-width: 900px) 600px,
+                   900px"
+            alt="Beautiful Landscape"
+            class="responsive-img"
+        >
+        <p>The above image will adjust its size based on the screen width.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Responsive Images Example</p>
+    </footer>
+</body>
+</html>

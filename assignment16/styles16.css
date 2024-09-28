@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* Button with Pseudo-Classes */
+.interactive-btn {
+    padding: 10px 20px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interactive-btn:hover {
+    background-color: #32cd32; /* Changes color on hover */
+}
+
+.interactive-btn:active {
+    background-color: #ff6347; /* Changes color when clicked */
+}
+
+/* Input Focus Style */
+.focus-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.focus-input:focus {
+    border-color: #4682b4; /* Changes border color when focused */
+    outline: none;
+}
+
+/* nth-child Pseudo-Class */
+.item-list li {
+    padding: 10px;
+    list-style: none;
+    margin: 5px 0;
+    background-color: #ddd;
+}
+
+.item-list li:nth-child(odd) {
+    background-color: #f0f0f0; /* Changes background for odd items */
+}
+
+.item-list li:nth-child(even) {
+    background-color: #c0c0c0; /* Changes background for even items */
+}
+
+/* Pseudo-Elements with ::before and ::after */
+.pseudo-element-box {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #4682b4;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Adding content before the box */
+.pseudo-element-box::before {
+    content: "Before";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #32cd32;
+    font-size: 14px;
+}
+
+/* Adding content after the box */
+.pseudo-element-box::after {
+    content: "After";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ff6347;
+    font-size: 14px;
+}

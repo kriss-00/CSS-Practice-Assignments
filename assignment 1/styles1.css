@@ -1,0 +1,34 @@
+    /* Element Selector - applies to all paragraphs */
+    p {
+        font-size: 16px;
+        color: darkblue;
+    }
+
+    /* Class Selector - applies to elements with class "highlight" */
+    .highlight {
+        background-color: yellow;
+        font-weight: bold;
+    }
+
+    /* ID Selector - applies to the element with ID "main-title" */
+    #main-title {
+        color: green;
+        text-transform: uppercase;
+    }
+
+    /* Attribute Selector - applies to elements with href attribute */
+    a[href] {
+        color: red;
+        text-decoration: none;
+    }
+
+    /* Pseudo-class Selector - changes link color on hover */
+    a:hover {
+        color: rgba(247, 16, 255, 0.766);
+    }
+
+    /* Pseudo-element Selector - applies styles to the first line of each paragraph */
+    p::first-line {
+        font-weight: bold;
+        color: darkred;
+    }

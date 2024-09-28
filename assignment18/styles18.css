@@ -1,0 +1,64 @@
+/* Define CSS Variables */
+:root {
+    --primary-color: #4682b4; /* Blue */
+    --secondary-color: #32cd32; /* Green */
+    --text-color: #333; /* Dark Gray */
+    --background-color: #f4f4f4; /* Light Gray */
+    --font-size-large: 2em; /* Large Font Size */
+    --font-size-medium: 1.5em; /* Medium Font Size */
+    --font-size-small: 1em; /* Small Font Size */
+    --padding: 20px; /* Standard Padding */
+    --margin: 15px; /* Standard Margin */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding);
+    text-align: center;
+}
+
+/* Main Section Styles */
+main {
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: var(--font-size-large);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    margin: var(--margin) 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding);
+    margin: var(--margin) 0;
+    border-radius: 5px; /* Round corners */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: var(--padding);
+    background-color: var(--primary-color);
+    color: white;
+}

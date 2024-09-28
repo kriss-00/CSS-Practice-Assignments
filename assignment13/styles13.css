@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+/* Box Styling */
+.transition-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #4682b4;
+    color: white;
+    line-height: 100px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out; /* Apply default transition */
+}
+
+/* Hover effect for box 1 (changing background color and text color) */
+.transition-box.box1:hover {
+    background-color: #ff6347;
+    color: black;
+}
+
+/* Hover effect for box 2 (changing width and height) */
+.transition-box.box2 {
+    transition: width 1s ease, height 1s ease; /* Change width and height with different timing */
+}
+
+.transition-box.box2:hover {
+    width: 300px;
+    height: 150px;
+}
+
+/* Hover effect for box 3 (delayed background color change) */
+.transition-box.box3 {
+    transition: background-color 0.7s ease-in-out 0.5s; /* Add delay to the transition */
+}
+
+.transition-box.box3:hover {
+    background-color: #32cd32;
+}

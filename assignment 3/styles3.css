@@ -1,0 +1,67 @@
+  /* Default font-family for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Set default line-height */
+    margin: 20px;
+}
+
+/* Example of different font-family */
+.serif-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.sans-serif-text {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+}
+
+.monospace-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+/* Different font sizes */
+.large-text {
+    font-size: 32px; /* Large font size */
+}
+
+.small-text {
+    font-size: 12px; /* Small font size */
+}
+
+/* Font weight variations */
+.bold-text {
+    font-weight: bold;
+}
+
+.light-text {
+    font-weight: 300; /* Lighter font weight */
+}
+
+/* Font style */
+.italic-text {
+    font-style: italic;
+}
+
+.normal-text {
+    font-style: normal;
+}
+
+/* Text transformation */
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+/* Adjusting line-height */
+.spaced-text {
+    line-height: 2; /* Double line-height */
+}

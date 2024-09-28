@@ -1,0 +1,62 @@
+        /* Main grid container */
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "sidebar content content"
+                "sidebar nested nested"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr; /* Three columns */
+            grid-template-rows: auto 200px 200px auto; /* Four rows */
+            grid-gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Define grid areas */
+        .header {
+            grid-area: header;
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #e74c3c;
+            padding: 20px;
+            color: white;
+        }
+
+        .nested-container {
+            grid-area: nested;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns inside the nested grid */
+            grid-template-rows: 1fr 1fr; /* Two rows inside the nested grid */
+            grid-gap: 10px;
+            background-color: #f39c12;
+            padding: 20px;
+            color: white;
+        }
+
+        .nested-item {
+            background-color: #8e44ad;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #34495e;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }

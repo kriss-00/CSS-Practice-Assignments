@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Assignment</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+    <p>This page demonstrates the CSS box model, showing the effects of padding, border, margin, and the difference between `content-box` and `border-box` models.</p>
+
+    <!-- Box with content-box model -->
+    <h2>Content-Box Model (Default)</h2>
+    <div class="box content-box">
+        <p>This box uses the <strong>content-box</strong> model. The width is set to 300px, and the padding, border, and margin are applied outside of the content width.</p>
+        <ul>
+            <li><strong>Width:</strong> 300px</li>
+            <li><strong>Padding:</strong> 20px</li>
+            <li><strong>Border:</strong> 5px solid blue</li>
+            <li><strong>Margin:</strong> 20px</li>
+        </ul>
+    </div>
+
+    <!-- Box with border-box model -->
+    <h2>Border-Box Model</h2>
+    <div class="box border-box">
+        <p>This box uses the <strong>border-box</strong> model. The width includes the padding and border, so the total width of the box remains 300px.</p>
+        <ul>
+            <li><strong>Width:</strong> 300px (including padding and border)</li>
+            <li><strong>Padding:</strong> 20px</li>
+            <li><strong>Border:</strong> 5px solid blue</li>
+            <li><strong>Margin:</strong> 20px</li>
+        </ul>
+    </div>
+
+</body>
+</html>

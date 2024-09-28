@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Container for the boxes */
+.container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+/* Box Styles */
+.box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+    position: absolute; /* All boxes are positioned absolutely for overlap */
+}
+
+/* Box 1 */
+.box1 {
+    background-color: #ff6347;
+    top: 50px;
+    left: 50px;
+    z-index: 1; /* Lower stacking order */
+}
+
+/* Box 2 */
+.box2 {
+    background-color: #4682b4;
+    top: 100px;
+    left: 100px;
+    z-index: 3; /* Highest stacking order */
+}
+
+/* Box 3 */
+.box3 {
+    background-color: #90ee90;
+    top: 150px;
+    left: 150px;
+    z-index: 2; /* Middle stacking order */
+}
